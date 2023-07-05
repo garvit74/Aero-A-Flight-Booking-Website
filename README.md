@@ -53,8 +53,4 @@ We would like to thank the following resources and libraries for their valuable 
 - [React.js](https://reactjs.org/)
 - [Node.js](https://nodejs.org/)
 - [Express.js](https://expressjs.com/)
-- [MongoDB](https://www.mongodb.com/)
 - [Stripe](https://stripe.com/)
-- [PayPal](https://www.paypal.com/)
-- [SendGrid](https://sendgrid.com/)
-- [Twilio](https://www.twilio.com/)
