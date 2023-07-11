@@ -12,10 +12,10 @@ const Search = () => {
             <span>Economy</span>
           </div>
           <div className="singleBtn">
-            <span>Business Class</span>
+            <span>Business</span>
           </div>
           <div className="singleBtn">
-            <span>Executive Class</span>
+            <span>Executive</span>
           </div>
         </div>
 
@@ -57,7 +57,7 @@ const Search = () => {
             </div>
           </div>
 
-          <button classname="btn btnBlock flex"> Search Flight</button>
+          <button className="btn btnBlock flex"> Search Flight</button>
         </div>
       </div>
     </div>

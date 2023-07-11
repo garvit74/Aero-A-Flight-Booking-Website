@@ -1,6 +1,5 @@
 import React from 'react'
-import { BsBookmarkCheck, BsShieldCheck } from 'react-icons/bs'
-import { RxCalendar } from 'react-icons/rx'
+import { BsBookmarkCheck, BsShieldCheck, BsCalendar3 } from 'react-icons/bs'
 
 const Info = () => {
   return (
@@ -11,15 +10,16 @@ const Info = () => {
           <button className='btn'>
             View All
           </button>
+        </div>
           <div className="cardsDiv grid">
             <div className="singleCard grid">
               <div className="iconDiv flex">
-                <RxCalendar className='icon'/>
+                <BsCalendar3 style={{fill:"white"}} className='icon'/>
               </div>
               <span className="cardTitle">
                 Book & Relax
               </span>
-              <p>You can also call airlines from your phone and book a flight ticket</p>
+              <p>You can also call airlines from your phone and book a flight ticket. You can also call airlines from your phone and book a flight ticket. You can also call airlines from your phone and book a flight ticket</p>
             </div>
             <div className="singleCard grid">
               <div className="iconDiv flex">
@@ -40,7 +40,6 @@ const Info = () => {
               <p>You can also call airlines from your phone and book a flight ticket</p>
             </div>
           </div>
-        </div>
       </div>
     </div>
   )
