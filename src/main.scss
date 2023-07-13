@@ -161,7 +161,7 @@ h2{
 
         .logoDiv{
             .Logo{
-                width: 50px;
+                width: 8%;
             }
         }
 
@@ -179,33 +179,33 @@ h2{
                 box-shadow:rgba(0,0,0,0.1) 0px 10px 15px -3px, rgba(0,0,0,0.05) 0px 4px 6px -2px;
                 border: 3px solid var(--whitelowColor);
                 transition: .4s ease-in-out;
-            }
-
-            .menu{
-                flex-direction: column;
-                gap: .5rem;
-                text-align: center;
-
-                .listItem{
-                    color: black;
-                    padding: .5rem 0rem;
-                    cursor: pointer;
-                    &:hover{
-                        color: var(--PrimaryColor);
-                        font-weight: 700;
+                .menu{
+                    flex-direction: column;
+                    gap: .5rem;
+                    text-align: center;
+    
+                    .listItem{
+                        color: black;
+                        padding: .5rem 0rem;
+                        cursor: pointer;
+                        &:hover{
+                            color: var(--PrimaryColor);
+                            font-weight: 700;
+                        }
                     }
                 }
-            }
-            .btnOne{
+                .btnOne{
                 display: block;
                 justify-content: center;
                 margin: auto;
                 margin-top: 1rem;
+                }
+            }        
+            .btnTwo{
+            display: none;
             }
         }
-        .btnTwo{
-            display: none;
-        }
+
         .toggleIcon{
             .icon{
                 font-size: 30px;
@@ -247,6 +247,7 @@ h2{
         align-items: center;
         border-radius: 5rem;
         position: relative;
+        z-index: 500;
 
         .videoDiv{
             width: 100%;
@@ -278,6 +279,7 @@ h2{
             flex-direction: column;
             margin: auto;
             width: 100%;
+            cursor: pointer;
 
             .singleBtn{
                 padding: .8rem 1.5rem;
@@ -447,6 +449,7 @@ h2{
             img{
                 width: 100%;
                 max-width: 430px; 
+                border-radius: 2rem;
             }
         } 
 
@@ -950,7 +953,7 @@ h2{
             .singleCard{
                 max-width: 260px;
                 padding: 3rem 1rem;
-                overflow: auto;
+                overflow: hidden;
             }
         }
     }
@@ -1048,13 +1051,100 @@ h2{
         .homeImages{
             .videoDiv{
                 width: 90%;
-                height: 300px;
+                height: 400px;
                 .video{
                     height: 100%;
                     width: 100%;
+                    object-fit: cover;
+                    border-radius: 15rem;
+                }
+            }
+
+            .plane{
+                width: 100%;
+                top: -5% ;
+            }
+        }
+    }
+
+    .search{ 
+        .sectionContainer{
+            .btns{
+                width: 50%;
+            }
+        }
+    }
+
+
+}
+
+@media screen and (min-width: 1106px){
+    .subscriber{
+        .sectionContainer{
+            max-width: 60%;
+        }
+    }
+}
+
+@media screen and (min-width: 1332px){
+    .navBar{
+        .navBarOne{
+            .menu{
+                gap: 1rem;
+
+                .listItem{
+                    padding: 0 1.5rem;
+                    font-size: 14px;
                 }
             }
         }
     }
 
+    .support{
+        .sectioncontainer{
+            .infoDiv{
+                gap: 1rem;
+                .textDiv{
+                    .singleInfo{
+                        p{
+                            max-width: 500px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .subscriber{
+        .sectionContainer{
+            max-width: 50%;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .home{
+        .homeImages{
+            .plane{
+                width: 90%;
+                top:-30%;
+            }
+        }
+    }
+}
+
+
+::selection{
+    background: var(--PrimaryColor);
+    color: white ;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background: var(--greyText);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--PrimaryColor);
+    border-radius: 10px;
 }

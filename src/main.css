@@ -149,7 +149,7 @@ h2 {
   transition: 0.3s ease-in-out;
 }
 .navBar .navBarTwo .logoDiv .Logo {
-  width: 50px;
+  width: 8%;
 }
 @media screen and (max-width: 768px) {
   .navBar .navBarTwo .navBarMenu {
@@ -166,29 +166,29 @@ h2 {
     border: 3px solid var(--whitelowColor);
     transition: 0.4s ease-in-out;
   }
-  .navBar .navBarTwo .menu {
+  .navBar .navBarTwo .navBarMenu .menu {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
   }
-  .navBar .navBarTwo .menu .listItem {
+  .navBar .navBarTwo .navBarMenu .menu .listItem {
     color: black;
     padding: 0.5rem 0rem;
     cursor: pointer;
   }
-  .navBar .navBarTwo .menu .listItem:hover {
+  .navBar .navBarTwo .navBarMenu .menu .listItem:hover {
     color: var(--PrimaryColor);
     font-weight: 700;
   }
-  .navBar .navBarTwo .btnOne {
+  .navBar .navBarTwo .navBarMenu .btnOne {
     display: block;
     justify-content: center;
     margin: auto;
     margin-top: 1rem;
   }
-}
-.navBar .navBarTwo .btnTwo {
-  display: none;
+  .navBar .navBarTwo .btnTwo {
+    display: none;
+  }
 }
 .navBar .navBarTwo .toggleIcon .icon {
   font-size: 30px;
@@ -223,6 +223,7 @@ h2 {
   align-items: center;
   border-radius: 5rem;
   position: relative;
+  z-index: 500;
 }
 .home .homeImages .videoDiv {
   width: 100%;
@@ -249,6 +250,7 @@ h2 {
   flex-direction: column;
   margin: auto;
   width: 100%;
+  cursor: pointer;
 }
 .search .sectionContainer .btns .singleBtn {
   padding: 0.8rem 1.5rem;
@@ -391,6 +393,7 @@ h2 {
 .lounge .sectionContainer .imgDiv img {
   width: 100%;
   max-width: 430px;
+  border-radius: 2rem;
 }
 .lounge .sectionContainer .textDiv .grids {
   margin-top: 1rem;
@@ -760,7 +763,7 @@ h2 {
   .info .infoContainer .singleCard {
     max-width: 260px;
     padding: 3rem 1rem;
-    overflow: auto;
+    overflow: hidden;
   }
   .lounge .sectionContainer {
     grid-template-columns: repeat(2, 1fr);
@@ -821,10 +824,67 @@ h2 {
   }
   .home .homeImages .videoDiv {
     width: 90%;
-    height: 300px;
+    height: 400px;
   }
   .home .homeImages .videoDiv .video {
     height: 100%;
     width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 15rem;
   }
+  .home .homeImages .plane {
+    width: 100%;
+    top: -5%;
+  }
+  .search .sectionContainer .btns {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1106px) {
+  .subscriber .sectionContainer {
+    max-width: 60%;
+  }
+}
+@media screen and (min-width: 1332px) {
+  .navBar .navBarOne .menu {
+    gap: 1rem;
+  }
+  .navBar .navBarOne .menu .listItem {
+    padding: 0 1.5rem;
+    font-size: 14px;
+  }
+  .support .sectioncontainer .infoDiv {
+    gap: 1rem;
+  }
+  .support .sectioncontainer .infoDiv .textDiv .singleInfo p {
+    max-width: 500px;
+  }
+  .subscriber .sectionContainer {
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .home .homeImages .plane {
+    width: 90%;
+    top: -30%;
+  }
+}
+::-moz-selection {
+  background: var(--PrimaryColor);
+  color: white;
+}
+::selection {
+  background: var(--PrimaryColor);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--greyText);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--PrimaryColor);
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */
